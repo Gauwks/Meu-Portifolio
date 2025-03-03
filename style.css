@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Fonte';
+    src: url('/fontes/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Fonte', sans-serif;
+}
+
+.navbar{
+    box-shadow: 0 1px 4px rgba(146,161,176,.3);
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 90%;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+a{ 
+text-decoration: none;
+color: rgb(28, 28, 28);
+font-family: 'Fonte', sans-serif;
+}
+
+
+#nav-a{
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+#nav-a:hover {
+    color: blue;
+    transition: 0.3s;
+}
+
+.sobre {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 180px;
+  
+}
+
+#img-button{
+    width: 20px; 
+    height: 20px;
+}
+
+.botao, #botao {
+    color: white;
+    border-radius: 40px;
+    font-size: 30px;
+    border-color: white;
+    background: linear-gradient(120deg, #007bff, #6a0dad);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 30px;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding-top: 100px;
+}
+
+
+.img-inicio {
+    width: 270px; 
+    height: 270px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-left: 200px; 
+    border-radius: 50%;
+    border: 4px solid #6a0dad;
+    box-shadow: 0px 0px 15px #6a0dad;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 90%;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.links img {
+    width: 40px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.links img:hover {
+    transform: scale(1.1); 
+}
+
+.sobremim{
+    padding-top: 10px;
+    padding: 100px 0; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(138, 182, 227));
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    max-width: 1000px; 
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.foto-sobre {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid rgb(18, 13, 173);
+    box-shadow: 0px 0px 15px rgb(8, 54, 141);
+    margin-left: -50px; 
+}
+
+.texto-sobre {
+    flex-grow: 2; 
+}
+
+.skils {
+    background: linear-gradient(to bottom, rgb(138, 182, 227), rgb(138, 43, 226)); 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.habilidades-lista {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+button img {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+.habilidades-texto {
+    background: rgba(0, 0, 0, 0.2); 
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.habilidades-texto legend {
+    font-weight: bold;
+    color: white;
+    padding: 0 10px;
+}
+
+.habilidades-texto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.habilidades-texto li {
+    margin-bottom: 5px;
+}
+
+
+.contato {
+    background: linear-gradient(to bottom, rgb(138, 43, 226), rgb(75, 0, 130)); 
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.div-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.info-contato p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background: linear-gradient(to bottom, rgb(75, 0, 130), rgb(44, 0, 62)); 
+    color: white; 
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}

@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-Comp{
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    gap: 20px;
+    margin: 30px;
+    margin-left: 300px;
+    margin-right: 400px;
+    max-width: 100px;
+}
+
+.container-Comp p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+.container-Comp svg, .CardHTML, .CardCSS, .CardJS, .CardReact, .CardSQL {
+  font-size: 40px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+ 
+}
+
+.CardHTML:hover, .CardCSS:hover, .CardJS:hover, .CardReact:hover, .CardSQL:hover {
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.CardHTML{
+    color: #f97316;
+}
+
+.CardCSS{
+    color: #2563eb;
+}
+
+.CardJS{
+    color: #facc15
+}
+
+.CardReact{
+    color: #33cfea
+}
+
+.CardSQL{
+   color:  #134e4a
+}
+

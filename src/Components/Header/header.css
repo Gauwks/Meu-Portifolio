@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+  padding-right: 250px;
+  height: 80px;
+  background-color: #eaeaea;
+  align-items: center;
+  box-shadow: 0 0.5px 40px #573f576f;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #393939;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #7c3aed;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    padding-right: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 0;
+  }
+}

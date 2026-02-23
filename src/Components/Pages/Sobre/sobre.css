@@ -1,0 +1,93 @@
+.sobre-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.sobre-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1 1 0;
+  min-width: 350px;
+  max-width: 580px;
+}
+
+.sobre,
+.formacao {
+  width: 100%;
+}
+
+.sobre h1,
+.formacao-titulo {
+  color: #6d28d9;
+  margin: 0 0 1.2rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.sobre p,
+.formacao p {
+  line-height: 1.8;
+  color: #333;
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.foto {
+  flex: 0 0 380px;
+  height: 380px;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #6d28d9;
+}
+
+@media (max-width: 980px) {
+  .sobre-page {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .sobre-texto {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .foto {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sobre h1,
+  .formacao-titulo {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .foto {
+    width: 260px;
+    height: 260px;
+  }
+
+  .sobre h1,
+  .formacao-titulo {
+    font-size: 1.7rem;
+  }
+
+  .sobre p,
+  .formacao p {
+    font-size: 0.95rem;
+  }
+}

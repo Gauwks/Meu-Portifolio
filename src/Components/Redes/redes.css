@@ -1,0 +1,63 @@
+.social-links{
+    display: flex;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.icone{
+    display: flex;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #6b21a8;
+    border: #3730a3;
+    border-radius: 60px;
+    transition: color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.icone:hover{
+    background-color: #8843ff;
+    transform: scale(1.1);
+    box-shadow: #070433 0px 0px 10px;
+}
+
+.icone, .instagram, .linkedin{
+    margin: 0;
+    width: 25px;
+    height: 20px;
+}
+
+
+.instagram {
+    display: flex;
+    padding: 20px;
+    color: #ffffff;
+    background-color:#ef447a;
+    border: #3730a3;
+    border-radius: 60px;
+    transition: color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.instagram:hover{
+    background-color: #fa677d;
+    transform: scale(1.1);
+    box-shadow: #7f1010 0px 0px 10px;
+}
+
+.linkedin {
+    display: flex;
+    padding: 20px;
+    color: #ffffff;
+    background-color:#2154e2;
+    border: #3730a3;
+    border-radius: 60px;
+    transition: color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.linkedin:hover{
+    background-color: #348fd8;
+    transform: scale(1.1);
+    box-shadow: #172554 0px 0px 10px;
+}

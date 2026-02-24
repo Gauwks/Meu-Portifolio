@@ -5,23 +5,57 @@ body{
 
 .container-Comp{
     display: flex;
-    justify-content: space-between;
-    max-width: 200px;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    margin: 30px;
-    margin-left: 300px;
-    margin-right: 400px;
-    max-width: 100px;
+    margin: 30px auto;
+    max-width: 900px;
 }
+
+.Habilidades{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.estudando{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.grupo-estudando{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 
 .container-Comp p{
     font-size: 15px;
     font-weight: 600;
 }
 
+.container-Comp h1,
+.container-Comp h2{
+    color: #4d0d46;
+    margin: 0;
+    text-align: center;
+}
 
 
-.container-Comp svg, .CardHTML, .CardCSS, .CardJS, .CardReact, .CardSQL {
+.container-Comp svg,
+.CardHTML,
+.CardCSS,
+.CardJS,
+.CardReact,
+.CardSQL,
+.CardPHP,
+.CardNode{
   font-size: 40px;
   background-color: white;
   padding: 30px;
@@ -29,13 +63,33 @@ body{
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: 0.3s;
   cursor: pointer;
- 
 }
 
-.CardHTML:hover, .CardCSS:hover, .CardJS:hover, .CardReact:hover, .CardSQL:hover {
-    transition: color 0.3s ease, transform 0.3s ease;
+
+.CardHTML,
+.CardCSS,
+.CardJS,
+.CardReact,
+.CardSQL,
+.CardPHP,
+.CardNode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.CardHTML:hover,
+.CardCSS:hover,
+.CardJS:hover,
+.CardReact:hover,
+.CardSQL:hover,
+.CardPHP:hover,
+.CardNode:hover{
     transform: scale(1.1);
 }
+
+
 
 .CardHTML{
     color: #f97316;
@@ -46,14 +100,59 @@ body{
 }
 
 .CardJS{
-    color: #facc15
+    color: #facc15;
 }
 
 .CardReact{
-    color: #33cfea
+    color: #33cfea;
 }
 
 .CardSQL{
-   color:  #134e4a
+   color:  #134e4a;
 }
 
+.CardPHP{
+    color: #6a65b7;
+    margin-top: 20px;
+}
+
+.CardNode{
+    color: #22c538;
+    margin-top: 20px;
+}
+
+
+
+.parentese{
+    color: #000000b7;
+}
+
+
+
+.CardHTML:hover{
+     box-shadow: 0 4px 15px #f78533bb;
+}
+
+.CardCSS:hover{
+     box-shadow: 0 4px 15px #4176e9a5;
+}
+
+.CardJS:hover{
+     box-shadow: 0 4px 15px #ecca41d7;
+}
+
+.CardReact:hover{
+     box-shadow: 0 4px 15px #41d7f2cc;
+}
+
+.CardSQL:hover{
+     box-shadow: 0 4px 15px #1b706bdb;
+}
+
+.CardPHP:hover{
+    box-shadow: 0 4px 15px #aa77c4e3;
+}
+
+.CardNode:hover{
+   box-shadow: 0 4px 15px #32d247d2;
+}
